@@ -13,6 +13,8 @@
 		D1373B871C81D97600CFA9AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1373B851C81D97600CFA9AF /* Main.storyboard */; };
 		D1373B921C81D97600CFA9AF /* NSCollectionViewDragDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B911C81D97600CFA9AF /* NSCollectionViewDragDropTests.swift */; };
 		D1373B9D1C81D97600CFA9AF /* NSCollectionViewDragDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B9C1C81D97600CFA9AF /* NSCollectionViewDragDropUITests.swift */; };
+		D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373BAA1C81DAA100CFA9AF /* MyItem.swift */; };
+		D1373BAD1C81DAA100CFA9AF /* MyItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1373BAB1C81DAA100CFA9AF /* MyItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D1373B981C81D97600CFA9AF /* NSCollectionViewDragDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCollectionViewDragDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1373B9C1C81D97600CFA9AF /* NSCollectionViewDragDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionViewDragDropUITests.swift; sourceTree = "<group>"; };
 		D1373B9E1C81D97700CFA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1373BAA1C81DAA100CFA9AF /* MyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
+		D1373BAB1C81DAA100CFA9AF /* MyItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D1373B831C81D97600CFA9AF /* Assets.xcassets */,
 				D1373B851C81D97600CFA9AF /* Main.storyboard */,
 				D1373B881C81D97600CFA9AF /* Info.plist */,
+				D1373BAA1C81DAA100CFA9AF /* MyItem.swift */,
+				D1373BAB1C81DAA100CFA9AF /* MyItem.xib */,
 			);
 			path = NSCollectionViewDragDrop;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			files = (
 				D1373B841C81D97600CFA9AF /* Assets.xcassets in Resources */,
 				D1373B871C81D97600CFA9AF /* Main.storyboard in Resources */,
+				D1373BAD1C81DAA100CFA9AF /* MyItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */,
+				D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */,
 				D1373B801C81D97600CFA9AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
