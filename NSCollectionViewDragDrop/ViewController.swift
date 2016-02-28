@@ -29,7 +29,46 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func addToTop(sender: AnyObject) {
+        strings.insert("Top", atIndex: 0)
+        
+        let indexPaths: Set<NSIndexPath> = [NSIndexPath(forItem: 0, inSection: 0)]
+        collectionView.animator().performBatchUpdates({
+            self.collectionView.animator().insertItemsAtIndexPaths(indexPaths)
+            }, completionHandler: { finished in
+                self.collectionView.reloadData()
+        })
+    }
 
+    @IBAction func removeFromTop(sender: AnyObject) {
+        guard strings.count > 0 else { return }
+        
+        strings.removeFirst()
+        
+        let indexPaths: Set<NSIndexPath> = [NSIndexPath(forItem: 0, inSection: 0)]
+        collectionView.animator().performBatchUpdates({
+            self.collectionView.animator().deleteItemsAtIndexPaths(indexPaths)
+            }, completionHandler: { finished in
+                self.collectionView.reloadData()
+        })
+    }
+    
+    @IBAction func replaceLast(sender: AnyObject) {
+        guard strings.count > 0 else { return }
+        
+        strings.removeLast()
+        strings.append("Last")
+        
+        let indexPaths: Set<NSIndexPath> = [NSIndexPath(forItem: strings.count - 1, inSection: 0)]
+        
+        collectionView.animator().performBatchUpdates({
+            self.collectionView.deleteItemsAtIndexPaths(indexPaths)
+            self.collectionView.insertItemsAtIndexPaths(indexPaths)
+            }, completionHandler: { finished in
+                self.collectionView.reloadData()
+        })
+    }
+    
 }
 
 extension ViewController: NSCollectionViewDataSource {
