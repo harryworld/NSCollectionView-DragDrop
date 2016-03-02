@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12004C31C8734200039764C /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12004C21C8734200039764C /* MyView.swift */; };
 		D1373B801C81D97600CFA9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B7F1C81D97600CFA9AF /* AppDelegate.swift */; };
 		D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B811C81D97600CFA9AF /* ViewController.swift */; };
 		D1373B841C81D97600CFA9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1373B831C81D97600CFA9AF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12004C21C8734200039764C /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		D1373B7C1C81D97600CFA9AF /* NSCollectionViewDragDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewDragDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1373B7F1C81D97600CFA9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1373B811C81D97600CFA9AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				D1373B881C81D97600CFA9AF /* Info.plist */,
 				D1373BAA1C81DAA100CFA9AF /* MyItem.swift */,
 				D1373BAB1C81DAA100CFA9AF /* MyItem.xib */,
+				D12004C21C8734200039764C /* MyView.swift */,
 			);
 			path = NSCollectionViewDragDrop;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12004C31C8734200039764C /* MyView.swift in Sources */,
 				D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */,
 				D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */,
 				D1373B801C81D97600CFA9AF /* AppDelegate.swift in Sources */,
@@ -483,6 +487,7 @@
 				D1373BA31C81D97700CFA9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1373BA41C81D97700CFA9AF /* Build configuration list for PBXNativeTarget "NSCollectionViewDragDropTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				D1373BA61C81D97700CFA9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1373BA71C81D97700CFA9AF /* Build configuration list for PBXNativeTarget "NSCollectionViewDragDropUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				D1373BA91C81D97700CFA9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

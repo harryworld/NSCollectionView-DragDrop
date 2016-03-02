@@ -119,4 +119,12 @@ extension ViewController: NSCollectionViewDelegate {
         return true
     }
     
+    func collectionView(collectionView: NSCollectionView, draggingImageForItemsAtIndexPaths indexPaths: Set<NSIndexPath>, withEvent event: NSEvent, offset dragImageOffset: NSPointPointer) -> NSImage {
+        return NSImage(named: NSImageNameFolder)!
+    }
+    
+    func collectionView(collectionView: NSCollectionView, draggingImageForItemsAtIndexes indexes: NSIndexSet, withEvent event: NSEvent, offset dragImageOffset: NSPointPointer) -> NSImage {
+        return NSImage(named: NSImageNameFolder)!
+    }
+    
 }
