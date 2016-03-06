@@ -69,6 +69,16 @@ class ViewController: NSViewController {
         })
     }
     
+    @IBAction func scrollTo(sender: AnyObject) {
+        let rect = collectionView.frameForItemAtIndex(2)
+        //collectionView.scrollPoint(rect.origin)
+        
+        let clipView = collectionView.enclosingScrollView!.contentView
+        NSAnimationContext.beginGrouping()
+        NSAnimationContext.currentContext().duration = 2
+        clipView.animator().setBoundsOrigin(rect.origin)
+        NSAnimationContext.endGrouping()
+    }
 }
 
 extension ViewController: NSCollectionViewDataSource {

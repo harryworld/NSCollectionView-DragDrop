@@ -670,11 +670,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="NSCollectionViewDragDrop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="306"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bId-8J-aVH">
-                                <rect key="frame" x="0.0" y="50" width="480" height="220"/>
+                                <rect key="frame" x="0.0" y="86" width="480" height="220"/>
                                 <clipView key="contentView" id="S4d-18-kDs">
                                     <rect key="frame" x="1" y="1" width="478" height="218"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,7 +703,7 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-K6-nN1">
-                                <rect key="frame" x="14" y="8" width="109" height="32"/>
+                                <rect key="frame" x="14" y="44" width="109" height="32"/>
                                 <buttonCell key="cell" type="push" title="Add To Top" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="31u-qg-aKS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -713,7 +713,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICh-lC-ZJN">
-                                <rect key="frame" x="318" y="8" width="148" height="32"/>
+                                <rect key="frame" x="318" y="44" width="148" height="32"/>
                                 <buttonCell key="cell" type="push" title="Replace Last Item" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qqW-Cp-HmD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -723,7 +723,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3P-Yx-1yq">
-                                <rect key="frame" x="148" y="8" width="149" height="32"/>
+                                <rect key="frame" x="148" y="44" width="149" height="32"/>
                                 <buttonCell key="cell" type="push" title="Remove From Top" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QCv-QT-sVa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -732,9 +732,19 @@
                                     <action selector="removeFromTop:" target="XfG-lQ-9wD" id="QYn-I1-B7i"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-CF-rv0">
+                                <rect key="frame" x="91" y="6" width="93" height="32"/>
+                                <buttonCell key="cell" type="push" title="Scroll To" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Y62-1s-hDU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="scrollTo:" target="XfG-lQ-9wD" id="p10-D3-XF1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bId-8J-aVH" secondAttribute="bottom" constant="50" id="6eQ-z9-y5R"/>
+                            <constraint firstAttribute="bottom" secondItem="bId-8J-aVH" secondAttribute="bottom" constant="86" id="6eQ-z9-y5R"/>
                             <constraint firstItem="bId-8J-aVH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="G5H-5E-JDK"/>
                             <constraint firstItem="bId-8J-aVH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Q7f-0A-Nee"/>
                             <constraint firstAttribute="trailing" secondItem="bId-8J-aVH" secondAttribute="trailing" id="aow-Ax-aDW"/>
@@ -746,7 +756,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="673"/>
         </scene>
     </scenes>
 </document>
