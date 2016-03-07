@@ -34,7 +34,8 @@ class ViewController: NSViewController {
         
         let indexPaths: Set<NSIndexPath> = [NSIndexPath(forItem: 0, inSection: 0)]
         collectionView.animator().performBatchUpdates({
-            self.collectionView.animator().insertItemsAtIndexPaths(indexPaths)
+            self.collectionView.scrollPoint(NSPoint(x: 0, y: 0))
+            self.collectionView.insertItemsAtIndexPaths(indexPaths)
             }, completionHandler: { finished in
                 self.collectionView.reloadData()
         })
@@ -78,6 +79,13 @@ class ViewController: NSViewController {
         NSAnimationContext.currentContext().duration = 2
         clipView.animator().setBoundsOrigin(rect.origin)
         NSAnimationContext.endGrouping()
+        
+        clipView.postsBoundsChangedNotifications = true
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "boundsDidChange:", name: NSViewBoundsDidChangeNotification, object: clipView)
+    }
+    
+    func boundsDidChange(notification: NSNotification) {
+        print("boundsDidChange")
     }
 }
 
