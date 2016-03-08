@@ -21,6 +21,8 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         collectionView.registerForDraggedTypes([NSPasteboardTypeString])
+        
+        collectionView.backgroundColors = [NSColor.blackColor()]
     }
 
     override var representedObject: AnyObject? {
