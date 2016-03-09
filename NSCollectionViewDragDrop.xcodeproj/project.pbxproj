@@ -16,6 +16,7 @@
 		D1373B9D1C81D97600CFA9AF /* NSCollectionViewDragDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B9C1C81D97600CFA9AF /* NSCollectionViewDragDropUITests.swift */; };
 		D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373BAA1C81DAA100CFA9AF /* MyItem.swift */; };
 		D1373BAD1C81DAA100CFA9AF /* MyItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1373BAB1C81DAA100CFA9AF /* MyItem.xib */; };
+		D1EBFE3E1C9058A3005AF671 /* NSBezierPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EBFE3D1C9058A3005AF671 /* NSBezierPath+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D1373B9E1C81D97700CFA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1373BAA1C81DAA100CFA9AF /* MyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
 		D1373BAB1C81DAA100CFA9AF /* MyItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyItem.xib; sourceTree = "<group>"; };
+		D1EBFE3D1C9058A3005AF671 /* NSBezierPath+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D1373BAA1C81DAA100CFA9AF /* MyItem.swift */,
 				D1373BAB1C81DAA100CFA9AF /* MyItem.xib */,
 				D12004C21C8734200039764C /* MyView.swift */,
+				D1EBFE3D1C9058A3005AF671 /* NSBezierPath+Extensions.swift */,
 			);
 			path = NSCollectionViewDragDrop;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EBFE3E1C9058A3005AF671 /* NSBezierPath+Extensions.swift in Sources */,
 				D12004C31C8734200039764C /* MyView.swift in Sources */,
 				D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */,
 				D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */,
