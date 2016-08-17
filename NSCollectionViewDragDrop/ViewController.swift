@@ -15,6 +15,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var collectionView: NSCollectionView!
     
     var draggingIndexPaths: Set<NSIndexPath> = []
+    var draggingItem: NSCollectionViewItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,10 +112,16 @@ extension ViewController: NSCollectionViewDelegate {
     
     func collectionView(collectionView: NSCollectionView, draggingSession session: NSDraggingSession, willBeginAtPoint screenPoint: NSPoint, forItemsAtIndexPaths indexPaths: Set<NSIndexPath>) {
         draggingIndexPaths = indexPaths
+        
+        if let indexPath = draggingIndexPaths.first,
+            item = collectionView.itemAtIndexPath(indexPath) {
+            draggingItem = item
+        }
     }
     
     func collectionView(collectionView: NSCollectionView, draggingSession session: NSDraggingSession, endedAtPoint screenPoint: NSPoint, dragOperation operation: NSDragOperation) {
         draggingIndexPaths = []
+        draggingItem = nil
     }
     
     func collectionView(collectionView: NSCollectionView, pasteboardWriterForItemAtIndexPath indexPath: NSIndexPath) -> NSPasteboardWriting? {
@@ -124,6 +131,15 @@ extension ViewController: NSCollectionViewDelegate {
     }
     
     func collectionView(collectionView: NSCollectionView, validateDrop draggingInfo: NSDraggingInfo, proposedIndexPath proposedDropIndexPath: AutoreleasingUnsafeMutablePointer<NSIndexPath?>, dropOperation proposedDropOperation: UnsafeMutablePointer<NSCollectionViewDropOperation>) -> NSDragOperation {
+        
+        if let proposedDropIndexPath = proposedDropIndexPath.memory,
+            draggingItem = draggingItem,
+            currentIndexPath = collectionView.indexPathForItem(draggingItem)
+            where currentIndexPath != proposedDropIndexPath {
+            
+            collectionView.animator().moveItemAtIndexPath(currentIndexPath, toIndexPath: proposedDropIndexPath)
+        }
+        
         return .Move
     }
     
