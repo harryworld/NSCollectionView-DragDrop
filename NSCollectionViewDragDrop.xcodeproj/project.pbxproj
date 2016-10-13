@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D12004C31C8734200039764C /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12004C21C8734200039764C /* MyView.swift */; };
+		D13540901DAFC8100025F9FA /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135408F1DAFC8100025F9FA /* MyCollectionView.swift */; };
 		D1373B801C81D97600CFA9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B7F1C81D97600CFA9AF /* AppDelegate.swift */; };
 		D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1373B811C81D97600CFA9AF /* ViewController.swift */; };
 		D1373B841C81D97600CFA9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1373B831C81D97600CFA9AF /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		D12004C21C8734200039764C /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		D135408F1DAFC8100025F9FA /* MyCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		D1373B7C1C81D97600CFA9AF /* NSCollectionViewDragDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewDragDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1373B7F1C81D97600CFA9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1373B811C81D97600CFA9AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				D1373B811C81D97600CFA9AF /* ViewController.swift */,
 				D1373B831C81D97600CFA9AF /* Assets.xcassets */,
 				D1373B851C81D97600CFA9AF /* Main.storyboard */,
+				D135408F1DAFC8100025F9FA /* MyCollectionView.swift */,
 				D1373B881C81D97600CFA9AF /* Info.plist */,
 				D1373BAA1C81DAA100CFA9AF /* MyItem.swift */,
 				D1373BAB1C81DAA100CFA9AF /* MyItem.xib */,
@@ -202,13 +205,16 @@
 				TargetAttributes = {
 					D1373B7B1C81D97600CFA9AF = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					D1373B8C1C81D97600CFA9AF = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D1373B7B1C81D97600CFA9AF;
 					};
 					D1373B971C81D97600CFA9AF = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D1373B7B1C81D97600CFA9AF;
 					};
 				};
@@ -267,6 +273,7 @@
 			files = (
 				D1EBFE3E1C9058A3005AF671 /* NSBezierPath+Extensions.swift in Sources */,
 				D12004C31C8734200039764C /* MyView.swift in Sources */,
+				D13540901DAFC8100025F9FA /* MyCollectionView.swift in Sources */,
 				D1373B821C81D97600CFA9AF /* ViewController.swift in Sources */,
 				D1373BAC1C81DAA100CFA9AF /* MyItem.swift in Sources */,
 				D1373B801C81D97600CFA9AF /* AppDelegate.swift in Sources */,
@@ -405,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -417,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -429,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDropTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSCollectionViewDragDrop.app/Contents/MacOS/NSCollectionViewDragDrop";
 			};
 			name = Debug;
@@ -442,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDropTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSCollectionViewDragDrop.app/Contents/MacOS/NSCollectionViewDragDrop";
 			};
 			name = Release;
@@ -454,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDropUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = NSCollectionViewDragDrop;
 				USES_XCTRUNNER = YES;
 			};
@@ -467,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSCollectionViewDragDropUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = NSCollectionViewDragDrop;
 				USES_XCTRUNNER = YES;
 			};
