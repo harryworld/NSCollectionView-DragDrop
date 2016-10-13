@@ -36,7 +36,7 @@ class MyItem: NSCollectionViewItem {
         NSGraphicsContext.saveGraphicsState()
         let oldContext = NSGraphicsContext.currentContext()
         NSGraphicsContext.setCurrentContext(NSGraphicsContext(bitmapImageRep: bitmap))
-        slideCarrierImage?.drawInRect(itemBounds, fromRect: NSZeroRect, operation: .CompositeSourceOver, fraction: 1.0)
+        slideCarrierImage?.drawInRect(itemBounds, fromRect: NSZeroRect, operation: .SourceOver, fraction: 1.0)
         NSGraphicsContext.setCurrentContext(oldContext)
         NSGraphicsContext.restoreGraphicsState()
         
